@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-#include "student.h"
+#include "aluno.h"
 
 using namespace std;
 
@@ -58,6 +58,8 @@ class Turma {
     };
 
     void imprime() {
+        std::cout << std::endl;
+        std::cout << std::endl;
         std::cout << "Código da Disciplina: " << codDisciplina << std::endl;
         std::cout << "Código da Turma: " << codTurma << std::endl;
         std::cout << "Semestre: " << semestre << std::endl;
@@ -67,5 +69,7 @@ class Turma {
             std::cout << "Aluno " << i + 1 << ": " << alunos[i]->getRa()
                       << " - " << alunos[i]->getNome() << std::endl;
         }
+        std::cout << std::endl;
+        std::cout << std::endl;
     }
 };
